@@ -9,6 +9,7 @@
 ## Service
 - Spring에 Transaction 처리 개념
 - @Transactional 사용법
+- OSIV
 
 ## Repository
 - JDBC
