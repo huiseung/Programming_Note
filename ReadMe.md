@@ -32,6 +32,7 @@
 - gradle
 - @Scheduler
 - @EventListener
+- jwt, session
 
 ## Test
 - 통합 테스트, 단위 테스트, Junit
