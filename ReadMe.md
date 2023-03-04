@@ -55,6 +55,9 @@
 ## MSA
 - Spring Cloud 개념
 
+## WebFlux
+- WebFlux 개념
+
 ## Java
 - Design Pattern
 
@@ -64,5 +67,9 @@
 - 선착순 이벤트 처리
 
 ## Architecture
+- MVC
+- Layered Architecure
+- PortAdapter Architecture 
 - Push 와 Pull 
-- Layered Architecure, PortAdapter Architecture 
+- Reactive
+- Micro Service Architecture
