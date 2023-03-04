@@ -3,6 +3,12 @@
 ```
 GET /catalog-service/catalogs
 ```
+```
+{
+    
+}
+```
+
 
 - 상품 주문
 ```
@@ -64,6 +70,13 @@ GET /user-service/users/{userId}
     - mysql
 - orderServie
 - catalogeService
+  - 라이브러리
+    - Eureka Discovery Client
+    - Spring Web
+    - Lombok
+    - valid
+    - jpa
+    - mysql
 
 # User Service
 

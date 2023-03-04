@@ -12,11 +12,11 @@ import org.springframework.stereotype.Service;
 public class UserService {
     private final UserRepository userRepository;
 
-    public User createUser(UserCreateRequestDto requestDto){
+    public User createUser(User user){
         UserEntity userEntity = UserEntity.builder()
-                .name(requestDto.getName())
-                .identifier(requestDto.getIdentifier())
-                .password(requestDto.getPassword())
+                .name(user.getName())
+                .identifier(user.getIdentifier())
+                .password(user.getPassword())
                 .build();
         return userRepository.save(userEntity);
     }

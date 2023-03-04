@@ -1,10 +1,13 @@
 package com.example.userService.controller;
 
+import com.example.userService.dto.User;
 import com.example.userService.dto.request.UserCreateRequestDto;
 import com.example.userService.dto.response.UserResponseDto;
 import com.example.userService.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.UUID;
 
 @RequestMapping("/user-service")
 @RestController
@@ -18,7 +21,13 @@ public class UserController {
 
     @PostMapping
     public UserResponseDto save(@RequestBody UserCreateRequestDto requestDto){
-        return UserResponseDto.of(userService.createUser(requestDto));
+        User user = User.builder()
+                .userId(UUID.randomUUID().toString())
+                .name(requestDto.getName())
+                .identifier(requestDto.getIdentifier())
+                .password(requestDto.getPassword())
+                .build();
+        return UserResponseDto.of(userService.createUser(user));
     }
 
 
