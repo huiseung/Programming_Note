@@ -1,5 +1,6 @@
 package com.example.userService.service;
 
+import com.example.userService.client.OrderServiceClient;
 import com.example.userService.dto.User;
 import com.example.userService.dto.request.UserCreateRequestDto;
 import com.example.userService.entity.UserEntity;
@@ -11,6 +12,7 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class UserService {
     private final UserRepository userRepository;
+    private final OrderServiceClient orderServiceClient;
 
     public User createUser(User user){
         UserEntity userEntity = UserEntity.builder()
@@ -19,5 +21,9 @@ public class UserService {
                 .password(user.getPassword())
                 .build();
         return userRepository.save(userEntity);
+    }
+
+    public User getUserByUserId(String userId){
+        User user = userRepository
     }
 }
