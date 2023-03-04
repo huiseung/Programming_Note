@@ -16,7 +16,5 @@ public class UserRepository {
         return User.of(userJpaRepository.save(userEntity));
     }
 
-    @Transactional
-
 
 }

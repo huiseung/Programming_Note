@@ -9,7 +9,7 @@ import lombok.Getter;
 @Builder
 @AllArgsConstructor
 public class Product {
-    private Long pk;
+    private Long id;
     private String productId;
     private String productName;
     private Integer stock;
@@ -17,7 +17,7 @@ public class Product {
 
     public static Product of(ProductEntity productEntity){
         return Product.builder()
-                .pk(productEntity.getPk())
+                .id(productEntity.getId())
                 .productId(productEntity.getProductId())
                 .productName(productEntity.getProductName())
                 .stock(productEntity.getStock())
