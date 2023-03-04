@@ -1,14 +1,14 @@
 # Backend Knowledge
-
 ## Controller
 - DispacherServlet, HandlerMapping, HandlerAdapter
+- Request
+- Response
+- Cache
+- Interceptor
 
 ## Service
 - Spring에 Transaction 처리 개념
 - @Transactional 사용법
-
-## DTO, Domain
-
 
 ## Repository
 - JDBC
@@ -18,6 +18,17 @@
 - Lock 개념, JpaRepository에서 @Lock, Entity에서 @Version
 
 ## Entity
+- @Entity
+- POJO domain
+
+## etc
+- Bean
+- AOP
+- Filter
+- log
+- gradle
+- @Scheduler
+- @EventListener
 
 ## Test
 - 통합 테스트, 단위 테스트, Junit
@@ -38,6 +49,20 @@
 ## App Alaram
 - Firebase Cloud Messaging
 
+## Batch
+- Spring Batch 개념
 
+## MSA
+- Spring Cloud 개념
 
-# Spring Boot Code 
+## Java
+- Design Pattern
+
+## Usecase
+- 동시성 처리
+- 비동기 처리
+- 선착순 이벤트 처리
+
+## Architecture
+- Push 와 Pull 
+- Layered Architecure, PortAdapter Architecture 
