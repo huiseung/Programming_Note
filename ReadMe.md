@@ -40,6 +40,9 @@
 ## kafka
 - Kafka 개념, 명령어, Spring에서 사용법
 
+## Elastic Search
+- Elastic Search 개념
+
 ## Oauth
 - oauth 처리 과정
 
@@ -73,3 +76,9 @@
 - Push 와 Pull 
 - Reactive
 - Micro Service Architecture
+
+## CICD
+- docker
+- git
+- Load Balancer
+- 무중단 배포
