@@ -59,6 +59,7 @@ GET /user-service/users/{userId}
     - Eureka Discovery Client
     - Spring Web
     - Lombok
+    - valid
     - jpa
     - mysql
 - orderServie

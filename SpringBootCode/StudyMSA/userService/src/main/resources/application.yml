@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: userService
+    name: user-service
   datasource:
     # mysql
     driver-class-name: com.mysql.cj.jdbc.Driver

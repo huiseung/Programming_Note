@@ -1,5 +1,5 @@
-# User
-```java
+package com.example.userService.entity;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -28,10 +28,3 @@ public class UserEntity {
     private String password;
 
 }
-
-```
-
-```java
-
-
-```
