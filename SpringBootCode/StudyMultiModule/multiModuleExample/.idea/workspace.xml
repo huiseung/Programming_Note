@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8b56121c-371f-4841-bb32-073cb9fbbf9e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-1/src/main/java/com/api/Api1SpringApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-1/src/main/java/com/api/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-1/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-2/src/main/java/com/batch/Api2SpringApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-2/src/main/java/com/batch/JobConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-2/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/core/dto/UserDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/core/dto/request/CreateUserRequestDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/core/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/core/repository/UserJpaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/core/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/core/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../StudyTimeAttckCoupon/couponApi/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../StudyTimeAttckCoupon/couponApi/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../StudyTimeAttckCoupon/couponApi/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../StudyTimeAttckCoupon/couponApi/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../StudyTimeAttckCoupon/couponApi/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../StudyTimeAttckCoupon/couponApi/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../StudyTimeAttckCoupon/couponApi/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../StudyTimeAttckCoupon/couponApi/src/main/java/com/example/couponApi/CouponApiApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../StudyTimeAttckCoupon/couponApi/src/main/java/com/example/couponApi/config/RedisConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../StudyTimeAttckCoupon/couponApi/src/main/java/com/example/couponApi/controller/CouponPolicyController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../StudyTimeAttckCoupon/couponApi/src/main/java/com/example/couponApi/controller/WaitingQueueController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../StudyTimeAttckCoupon/couponApi/src/main/java/com/example/couponApi/dto/CouponPolicyDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../StudyTimeAttckCoupon/couponApi/src/main/java/com/example/couponApi/dto/request/CreateCouponPolicyRequestDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../StudyTimeAttckCoupon/couponApi/src/main/java/com/example/couponApi/dto/request/CreateMessageRequestDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../StudyTimeAttckCoupon/couponApi/src/main/java/com/example/couponApi/dto/request/GetRangeRequestDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../StudyTimeAttckCoupon/couponApi/src/main/java/com/example/couponApi/dto/request/GetWaitingNumberRequestDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../StudyTimeAttckCoupon/couponApi/src/main/java/com/example/couponApi/entity/CouponPolicy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../StudyTimeAttckCoupon/couponApi/src/main/java/com/example/couponApi/repository/CouponPolicyJpaRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../StudyTimeAttckCoupon/couponApi/src/main/java/com/example/couponApi/repository/CouponPolicyRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../StudyTimeAttckCoupon/couponApi/src/main/java/com/example/couponApi/repository/RedisRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../StudyTimeAttckCoupon/couponApi/src/main/java/com/example/couponApi/service/WaitingQueueService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../StudyTimeAttckCoupon/couponApi/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../StudyTimeAttckCoupon/couponApi/src/test/java/com/example/couponApi/CouponApiApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../StudyTimeAttckCoupon/couponBatch/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../StudyTimeAttckCoupon/couponBatch/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../StudyTimeAttckCoupon/couponBatch/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../StudyTimeAttckCoupon/couponBatch/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../StudyTimeAttckCoupon/couponBatch/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../StudyTimeAttckCoupon/couponBatch/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../StudyTimeAttckCoupon/couponBatch/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../StudyTimeAttckCoupon/couponBatch/src/main/java/com/example/couponBatch/CouponBatchApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../StudyTimeAttckCoupon/couponBatch/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../StudyTimeAttckCoupon/couponBatch/src/test/java/com/example/couponBatch/CouponBatchApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../선착순 이벤트 처리.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../선착순 이벤트 처리.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2MLtJgVvEU4dSuJWnacC3zMsJVH" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "jdk.selected.JAVA_MODULE": "11",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Api1SpringApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.api.Api1SpringApplication" />
+      <module name="multiModuleExample.api-1.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Api1SpringApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8b56121c-371f-4841-bb32-073cb9fbbf9e" name="Changes" comment="" />
+      <created>1677558627858</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1677558627858</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

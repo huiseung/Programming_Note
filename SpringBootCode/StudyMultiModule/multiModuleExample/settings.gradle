@@ -1,0 +1,4 @@
+rootProject.name = 'multiModuleExample'
+include 'api-1'
+include 'api-2'
+include 'core'
