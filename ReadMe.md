@@ -1,3 +1,5 @@
+- 한번씩 스쳐갔던 개념들을 알맹이를 채워 기록해 보고자 합니다
+
 # Backend Knowledge
 ## Controller
 - DispacherServlet, HandlerMapping, HandlerAdapter
