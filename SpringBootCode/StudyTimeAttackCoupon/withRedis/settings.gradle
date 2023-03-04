@@ -1,0 +1,4 @@
+rootProject.name = 'withRedis'
+include 'coupon-core'
+include 'coupon-api'
+include 'coupon-batch'

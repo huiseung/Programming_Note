@@ -1,0 +1,77 @@
+buildscript {
+    ext {
+        springBootVersion = '2.7.9'
+    }
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath "org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}"
+        classpath "io.spring.gradle:dependency-management-plugin:1.0.11.RELEASE"
+    }
+}
+
+subprojects{
+    apply plugin: 'java'
+    apply plugin: 'org.springframework.boot'
+    apply plugin: 'io.spring.dependency-management'
+
+
+    sourceCompatibility = '11'
+
+    repositories {
+        mavenCentral()
+    }
+
+    configurations{
+        compileOnly{
+            extendsFrom annotationProcessor
+        }
+    }
+
+    //모든 모듈에서 쓰는 공통 라이브러리
+    dependencies {
+        implementation 'org.springframework.boot:spring-boot-starter-web'
+        testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+        compileOnly 'org.projectlombok:lombok'
+        annotationProcessor 'org.projectlombok:lombok'
+
+        implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+        runtimeOnly 'com.mysql:mysql-connector-j'
+
+        implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+
+        testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+        testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    }
+
+    test {
+        useJUnitPlatform()
+    }
+}
+
+project(':coupon-core'){
+    bootJar {enabled = false}
+    jar {enabled = true}
+    dependencies {}
+}
+
+project(':coupon-api'){
+    bootJar {enabled = true}
+    jar {enabled = false}
+    dependencies{
+        implementation project(':coupon-core')
+    }
+}
+
+project(':coupon-batch'){
+    bootJar {enabled = true}
+    jar {enabled = false}
+    dependencies{
+        implementation project(':coupon-core')
+        implementation 'org.springframework.boot:spring-boot-starter-batch'
+    }
+}
+
+
