@@ -4,7 +4,7 @@
 - DispacherServlet, HandlerMapping, HandlerAdapter
 
 ## Service
-
+- @Transactional
 
 ## DTO, Domain
 
