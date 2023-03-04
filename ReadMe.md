@@ -9,6 +9,8 @@
 ## DTO, Domain
 
 ## Repository
+- JPA와 Hibernate
+- SpringDataJpa
 - SQL DML 개념, JpaRepository에서 @Query
 - Lock 개념, JpaRepository에서 @Lock, Entity에서 @Version
 
