@@ -4,9 +4,11 @@
 - DispacherServlet, HandlerMapping, HandlerAdapter
 
 ## Service
-- @Transactional
+- Spring에 Transaction 처리 개념
+- @Transactional 사용법
 
 ## DTO, Domain
+
 
 ## Repository
 - JDBC
@@ -23,5 +25,11 @@
 
 ## kafka
 - Kafka 개념, 명령어, Spring에서 사용법
+
+## Mail
+- Spring에서 Mail 보내는 법
+
+## App Alaram
+- Firebase Cloud Messagin
 
 # Spring Boot Code 
