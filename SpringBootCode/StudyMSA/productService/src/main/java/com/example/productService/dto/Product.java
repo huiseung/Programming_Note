@@ -24,4 +24,18 @@ public class Product {
                 .price(productEntity.getPrice())
                 .build();
     }
+
+    public ProductEntity toEntity(){
+        return ProductEntity.builder()
+                .id(id)
+                .productId(productId)
+                .productName(productName)
+                .stock(stock)
+                .price(price)
+                .build();
+    }
+
+    public void minusStock(Integer stock){
+        this.stock -= stock;
+    }
 }

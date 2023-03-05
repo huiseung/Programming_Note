@@ -7,6 +7,7 @@ import com.example.userService.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.UUID;
 
 @RequestMapping("/user-service")
@@ -27,7 +28,15 @@ public class UserController {
                 .identifier(requestDto.getIdentifier())
                 .password(requestDto.getPassword())
                 .build();
-        return UserResponseDto.of(userService.createUser(user));
+        User saveUser = userService.createUser(user);
+        saveUser.setOrders(new ArrayList<>());
+        return UserResponseDto.of(saveUser);
+    }
+
+    @GetMapping("/user/{usersId}")
+    public UserResponseDto getUser(@PathVariable("userId") String userId){
+        User user = userService.getUserById(userId);
+        return UserResponseDto.of(user);
     }
 
 

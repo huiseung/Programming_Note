@@ -29,4 +29,15 @@ public class Order {
                 .build();
     }
 
+    @Override
+    public String toString() {
+        return "Order{" +
+                "pk=" + pk +
+                ", orderId='" + orderId + '\'' +
+                ", productId='" + productId + '\'' +
+                ", userId='" + userId + '\'' +
+                ", quantity=" + quantity +
+                ", unitPrice=" + unitPrice +
+                '}';
+    }
 }

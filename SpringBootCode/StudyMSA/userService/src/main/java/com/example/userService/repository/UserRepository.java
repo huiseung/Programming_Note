@@ -16,5 +16,10 @@ public class UserRepository {
         return User.of(userJpaRepository.save(userEntity));
     }
 
+    @Transactional
+    public User findByUserId(String userId){
+        return User.of(userJpaRepository.findByUserId(userId).orElseThrow(IllegalAccessError::new));
+    }
+
 
 }

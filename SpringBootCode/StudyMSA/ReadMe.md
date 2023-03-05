@@ -1,3 +1,6 @@
+# Architecture
+![](./image/architecture.PNG)
+
 # 요구사항
 - 상품 조회
 ```
@@ -38,8 +41,6 @@ GET /order-service/users/{userId}/orders
 POST /user-service/users
 ```
 
-- 로그인
-
 
 - 사용자 정보 확인
 ```
@@ -52,24 +53,15 @@ GET /user-service/users/{userId}
 
 
 # 패키지 구성
-- discoveryService
+- discovery-service
   - 라이브러리
     - Eureka Server
-- apiGatewayService
+- api-gateway-service
   - 라이브러리
     - Eureka Discovery Client
     - Gateway
     - Lombock
-- userService
-  - 라이브러리
-    - Eureka Discovery Client
-    - Spring Web
-    - Lombok
-    - valid
-    - jpa
-    - mysql
-- orderServie
-- catalogeService
+- user-service, order-service, order-service
   - 라이브러리
     - Eureka Discovery Client
     - Spring Web
@@ -78,5 +70,5 @@ GET /user-service/users/{userId}
     - jpa
     - mysql
 
-# User Service
+
 

@@ -33,6 +33,8 @@ public class ProductController {
         return ProductResponseDto.of(productService.save(product));
     }
 
+
+
     @GetMapping("/catalogs")
     public List<ProductResponseDto> findAll(){
        return productService.findAll().stream()

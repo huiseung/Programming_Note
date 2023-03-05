@@ -13,7 +13,7 @@
 - powershell이 아닌 cmd에서 실행
 ### 서버 실행
 - zookeeper
-  - %KAFKA_HOME%/bin/windows/zookeeper-server.start.bat %KAFKA_HOME%/config/zookeeper.properties
+  - %KAFKA_HOME%/bin/windows/zookeeper-server-start.bat %KAFKA_HOME%/config/zookeeper.properties
 - kafka
   - %KAFKA_HOME%/bin/windows/kafka-server-start.bat %KAFKA_HOME%/config/server.properties
 
@@ -34,5 +34,6 @@
 
 ### 메세지 conume
 - %KAFKA_HOME%/bin/windows/kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic TestTopic --from-beginning
+
 
 
