@@ -33,13 +33,9 @@ public class UserController {
         return UserResponseDto.of(saveUser);
     }
 
-    @GetMapping("/user/{usersId}")
+    @GetMapping("/users/{userId}")
     public UserResponseDto getUser(@PathVariable("userId") String userId){
         User user = userService.getUserById(userId);
         return UserResponseDto.of(user);
     }
-
-
-
-
 }

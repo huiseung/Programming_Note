@@ -2,43 +2,51 @@
 ![](./image/architecture.PNG)
 
 # 요구사항
-- 상품 조회
+- 상품 등록
 ```
-GET /catalog-service/catalogs
-```
-```
+POST /product-service/
+
+// reuqest body
 {
-    
+  "productName": "testBook",
+  "stock": 10,
+  "price": 1000
 }
 ```
 
+- 상품 조회
+```
+GET /product-service/products
+```
 
 - 상품 주문
 ```
 POST /order-service/users/{userId}/orders
 
+// request body
 {
-    "name": "",
-    "identifier": "",
-    "password": ""
+    "productId": "b8ba3e44-890c-4c16-9eae-219996d0f72a",
+    "quantity": "2",
+    "unitPrice": "1000"
 }
 ```
+
 - 주문한 상품 확인
+  - 직접 요청도 되지만, FeignClient로 user-service에서 호출 가능하게 구현
 ```
 GET /order-service/users/{userId}/orders
 ```
 
-```
-{
-    "userId": "",
-    "name": "",
-    "orders": []
-}
-```
 
 - 회원가입
 ```
 POST /user-service/users
+
+{
+  "name": "testName",
+  "identifier": "testId",
+  "password": "testPassword"
+}
 ```
 
 
@@ -47,8 +55,12 @@ POST /user-service/users
 GET /user-service/users/{userId}
 ```
 
+```
+```
+
 
 - 상품 수량 업데이트
+  - order-service에서 product-service로 message 전송
 
 
 

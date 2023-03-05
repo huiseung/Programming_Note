@@ -23,7 +23,7 @@ public class OrderController {
         return "order-service It's working";
     }
 
-    @PostMapping("/{userId}/orders")
+    @PostMapping("/users/{userId}/orders")
     public OrderResponseDto createOrder(
             @PathVariable("userId") String userId,
             @RequestBody OrderCreateRequestDto requestDto){
@@ -39,7 +39,7 @@ public class OrderController {
         return OrderResponseDto.of(saveOrder);
     }
 
-    @GetMapping("/{userId}/orders")
+    @GetMapping("/users/{userId}/orders")
     public List<OrderResponseDto> getOrdersByUsers(
             @PathVariable("userId") String userId
     ){

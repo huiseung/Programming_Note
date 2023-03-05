@@ -1,8 +1,0 @@
-rootProject.name = 'StudyMSA'
-
-include 'discovery-service'
-include 'api-gateway-service'
-include 'core'
-include 'user-service'
-include 'order-service'
-include 'product-service'

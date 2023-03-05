@@ -1,7 +1,7 @@
 package com.example.productService.controller;
 
 import com.example.productService.dto.Product;
-import com.example.productService.dto.request.ProductRequestDto;
+import com.example.productService.dto.request.ProductCreateRequestDto;
 import com.example.productService.dto.response.ProductResponseDto;
 import com.example.productService.service.ProductService;
 import lombok.RequiredArgsConstructor;
@@ -23,7 +23,7 @@ public class ProductController {
     }
 
     @PostMapping
-    public ProductResponseDto save(@RequestBody ProductRequestDto requestDto){
+    public ProductResponseDto save(@RequestBody ProductCreateRequestDto requestDto){
         Product product = Product.builder()
                 .productId(UUID.randomUUID().toString())
                 .productName(requestDto.getProductName())
@@ -35,7 +35,7 @@ public class ProductController {
 
 
 
-    @GetMapping("/catalogs")
+    @GetMapping("/products")
     public List<ProductResponseDto> findAll(){
        return productService.findAll().stream()
                .map(ProductResponseDto::of)
