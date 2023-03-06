@@ -20,6 +20,8 @@
 ## 파일 관리 상태 변경
 - git init
   - 해당 폴더에 있는 파일 관리 시작
+- git remote add origin [github 주소]
+  - 로컬 저장소와 github 레퍼지토리를 연결
 - git add 파일이름
   - 특정 파일 staging
 - git add .
@@ -54,9 +56,10 @@
 ![](./image/git.PNG)
 
 ## 내려 받기
-- git clone
 - git fetch
 - git pull
+- git clone
+  - git init + git remote add + git pull
 
 ## 병합
 - git merge
