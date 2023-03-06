@@ -15,6 +15,7 @@
 ## 계정 등록
 - git config --global user.name 이름
 - git config --global user.email 이메일
+- git config --list
 
 ## 파일 관리 상태 변경
 - git init
@@ -42,7 +43,22 @@
 
 ## 파일 상태 확인
 - git status
-
-
+- git log --oneline
+  - commit 기록 보기
 
 ![](./image/git.PNG)
+
+## 내려 받기
+- git clone
+- git fetch
+- git pull
+
+## 병합
+- git merge
+
+
+## 브랜치
+- git branch
+- git checkout -b [브랜치이름]
+- git checkout [브랜치이름]
+
