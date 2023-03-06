@@ -41,6 +41,11 @@
 - git push [remote name] [branch name]
 - push 취소법
 
+- git checkout [commit hash code]
+  - push 전 커밋 기록보고 코드 상태 변경
+- git checkout master
+  - 최근 커밋으로 복구
+
 ## 파일 상태 확인
 - git status
 - git log --oneline
@@ -58,7 +63,13 @@
 
 
 ## 브랜치
+- git branch [브랜치 이름]
+  - 브랜치 생성
+- git checkout [브랜치 이름]
+  - 브랜치 변경
 - git branch
-- git checkout -b [브랜치이름]
-- git checkout [브랜치이름]
-
+  - 브랜치 목록 확인 & 현재 브랜치 확인
+- git checkout -b [브랜치 이름]
+  - 브랜치 생성과 동시에 이동
+- git branch -d [브랜치 이름]
+  - 브랜치 삭제
