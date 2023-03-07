@@ -88,4 +88,6 @@
   - 리뷰를 남기고, Merge를 승인한다
 - Reques Change
   - 리뷰를 남기고, Merge를 거부한다
-  
+
+## Collaborators and treams
+- Settings > Collaborators and Treams 에서 Write 권한을 등록해 준 user만 review를 남길 수 있다
