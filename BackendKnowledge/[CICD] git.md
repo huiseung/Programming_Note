@@ -76,3 +76,16 @@
   - 브랜치 생성과 동시에 이동
 - git branch -d [브랜치 이름]
   - 브랜치 삭제
+
+
+## Issue
+
+
+## Puul Request
+- Comment
+  - 리뷰를 남긴다
+- Accept
+  - 리뷰를 남기고, Merge를 승인한다
+- Reques Change
+  - 리뷰를 남기고, Merge를 거부한다
+  
