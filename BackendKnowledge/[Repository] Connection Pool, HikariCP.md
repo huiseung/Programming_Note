@@ -15,14 +15,27 @@
 - Thread가 HikariCp에 DataSource에 Connection을 반납하는 과정
 
 ```yml
-
+spring:
+  datasaource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql:localhost:5432/db
+    username: postgresql
+    password: postgresql
+    hikari:
+      maximum-pool-size: 20  
 ```
 
 ```java
 package javax.sql;
 
+public inteface DataSource extends CommonDataSource, Wrapper{
+  Connection getConnection() throws SQLException;
+  Connection getConnection(String username, String password) thrwos SQLException;
+}
 
 ```
+
+
 
 # 관련 에러
 - SQLExceptionHelper: hikari-pool-1 Connection is not available
