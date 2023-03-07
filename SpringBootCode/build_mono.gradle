@@ -22,6 +22,10 @@ dependencies {
 	// web
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	
+	// test
+	testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
 
 	// tool
 	compileOnly 'org.projectlombok:lombok'
@@ -41,19 +45,20 @@ dependencies {
 	testImplementation 'org.springframework.kafka:spring-kafka-test'
 
 	// cloud
-	implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
-	implementation 'org.springframework.cloud:spring-cloud-starter-openfeign'
+	// implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
+	// implementation 'org.springframework.cloud:spring-cloud-starter-openfeign'
 
 	// security
 //	implementation 'org.springframework.boot:spring-boot-starter-security'
 
 }
 
-dependencyManagement {
-	imports {
-		mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
-	}
-}
+// cloud
+// dependencyManagement {
+// 	imports {
+// 		mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+// 	}
+// }
 
 tasks.named('test') {
 	useJUnitPlatform()
