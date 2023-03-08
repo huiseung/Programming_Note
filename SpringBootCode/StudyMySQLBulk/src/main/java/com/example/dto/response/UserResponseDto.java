@@ -14,14 +14,12 @@ import java.time.Instant;
 @AllArgsConstructor
 public class UserResponseDto {
     private Long id;
-    private String userId;
     private String nickname;
     private Instant createAt;
 
     public static UserResponseDto of(User user){
         return UserResponseDto.builder()
                 .id(user.getId())
-                .userId(user.getUserId())
                 .nickname(user.getNickname())
                 .createAt(user.getCreateAt())
                 .build();

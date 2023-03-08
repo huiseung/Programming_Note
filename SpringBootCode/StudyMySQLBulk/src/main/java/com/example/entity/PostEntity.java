@@ -9,17 +9,22 @@ import javax.persistence.*;
 import java.time.Instant;
 
 @Getter
-@Table(name="users")
+@Table(name="posts")
 @Entity
 @NoArgsConstructor
 @Builder
 @AllArgsConstructor
-public class UserEntity {
+public class PostEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Column(nullable = false)
-    private String nickname;
+
+    @Column
+    private Long userId;
+    @Column
+    private String content;
+    @Column
+    private Long likeCount;
     @Column
     private Instant createAt;
 
@@ -27,4 +32,5 @@ public class UserEntity {
     public void prePersist(){
         this.createAt = Instant.now();
     }
+
 }

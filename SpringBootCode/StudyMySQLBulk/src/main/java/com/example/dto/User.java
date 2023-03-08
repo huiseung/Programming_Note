@@ -14,7 +14,6 @@ import java.time.Instant;
 @AllArgsConstructor
 public class User {
     private Long id;
-    private String userId;
     private String nickname;
     private Instant createAt;
 
@@ -25,7 +24,6 @@ public class User {
     public static User of(UserEntity userEntity){
         return User.builder()
                 .id(userEntity.getId())
-                .userId(userEntity.getUserId())
                 .nickname(userEntity.getNickname())
                 .createAt(userEntity.getCreateAt())
                 .build();
@@ -34,7 +32,6 @@ public class User {
     public UserEntity toEntity(){
         return UserEntity.builder()
                 .id(id)
-                .userId(userId)
                 .nickname(nickname)
                 .createAt(createAt)
                 .build();
