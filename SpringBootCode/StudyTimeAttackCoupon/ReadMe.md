@@ -63,6 +63,7 @@ GET :8082/batch/coupons/testCoupon
 ## Traffic Report
 
 - nGrinder를 이용한 결과 측정
+
 |유형|user|측정 시간(분)|Error(개)|TPS|최고 TPS|
 |---|---|---|---|---|---|
 |normal |10|1|2|24.7|37.0|
