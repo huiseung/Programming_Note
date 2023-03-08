@@ -26,11 +26,11 @@ public class PostEntity {
     @Column
     private Long likeCount;
     @Column
-    private Instant createAt;
+    private Instant createDate;
 
     @PrePersist
     public void prePersist(){
-        this.createAt = Instant.now();
+        this.createDate = Instant.now();
     }
 
 }

@@ -15,7 +15,7 @@ import java.time.Instant;
 public class User {
     private Long id;
     private String nickname;
-    private Instant createAt;
+    private Instant createDate;
 
     public void changeNickName(String nickname){
         this.nickname = nickname;
@@ -25,7 +25,7 @@ public class User {
         return User.builder()
                 .id(userEntity.getId())
                 .nickname(userEntity.getNickname())
-                .createAt(userEntity.getCreateAt())
+                .createDate(userEntity.getCreateDate())
                 .build();
     }
 
@@ -33,7 +33,7 @@ public class User {
         return UserEntity.builder()
                 .id(id)
                 .nickname(nickname)
-                .createAt(createAt)
+                .createDate(createDate)
                 .build();
     }
 }

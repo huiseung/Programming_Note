@@ -30,7 +30,6 @@ public class UserReadServiceTest {
     public void beforeEach(){
         UserEntity userEntity = UserEntity.builder()
                 .nickname(NICKNAME)
-                .userId(UUID.randomUUID().toString())
                 .build();
         id = userRepository.save(userEntity).getId();
     }

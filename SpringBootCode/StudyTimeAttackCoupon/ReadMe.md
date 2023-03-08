@@ -64,15 +64,14 @@ GET :8082/batch/coupons/testCoupon
 - 시나리오 100명에 유저가 각 10번씩 쿠폰 신청을 광클(1초 안에 연속 클릭)한 상황을 실험
   - 총 100개에 쿠폰이 신청한 유저들에게 발급 되면 성공
 
-- Jmeter를 이용한 결과 측정
+- nGrinder를 이용한 결과 측정
 
-|Architecture|thread(개)| ramp up period(sec) |error| throughput |
-|---|---|---|---|---|
-|normal |1000|1|4%|120.8/s|
-|with redis|1000|1|0.00%|191.4/s |
+|유형|user|측정 시간(분)|Error(개)|TPS|최고 TPS|
+|---|---|---|---|---|---|
+|normal |10|1|2|24.7|37.0|
+|with redis|10|1|0|98.8|126.0|
 
-- 평범한 설계시 초당 120.8개 처리량, 4% connection 부족 오류
-- redis 활용시 초당 191개 처리량, 0% error
+
 
 
 

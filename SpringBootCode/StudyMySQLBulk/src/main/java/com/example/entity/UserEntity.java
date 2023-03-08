@@ -21,10 +21,10 @@ public class UserEntity {
     @Column(nullable = false)
     private String nickname;
     @Column
-    private Instant createAt;
+    private Instant createDate;
 
     @PrePersist
     public void prePersist(){
-        this.createAt = Instant.now();
+        this.createDate = Instant.now();
     }
 }

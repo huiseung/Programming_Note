@@ -1,6 +1,6 @@
 package com.example.dto.response;
 
-import com.example.dto.User;
+import com.example.dto.Post;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -12,17 +12,16 @@ import java.time.Instant;
 @NoArgsConstructor
 @Builder
 @AllArgsConstructor
-public class UserResponseDto {
+public class PostResponseDto {
     private Long id;
-    private String nickname;
+    private String content;
     private Instant createDate;
 
-    public static UserResponseDto of(User user){
-        return UserResponseDto.builder()
-                .id(user.getId())
-                .nickname(user.getNickname())
-                .createDate(user.getCreateDate())
+    public static PostResponseDto of(Post post){
+        return PostResponseDto.builder()
+                .id(post.getId())
+                .content(post.getContent())
+                .createDate(post.getCreateDate())
                 .build();
     }
-
 }

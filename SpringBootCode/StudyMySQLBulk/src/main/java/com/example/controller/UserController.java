@@ -14,6 +14,11 @@ public class UserController {
     private final UserWriteService userWriteService;
     private final UserReadService userReadService;
 
+    @GetMapping
+    public String health(){
+        return "health-check";
+    }
+
     @PostMapping
     public UserResponseDto saveUser(@RequestBody UserCreateRequestDto requestDto){
         return UserResponseDto.of(userWriteService.save(requestDto));

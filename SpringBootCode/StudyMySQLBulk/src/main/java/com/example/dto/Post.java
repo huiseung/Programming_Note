@@ -17,7 +17,7 @@ public class Post {
     private Long userId;
     private String content;
     private Long likeCount;
-    private Instant createAt;
+    private Instant createDate;
 
     public static Post of(PostEntity postEntity){
         return Post.builder()
@@ -25,7 +25,16 @@ public class Post {
                 .userId(postEntity.getUserId())
                 .content(postEntity.getContent())
                 .likeCount(postEntity.getLikeCount())
-                .createAt(postEntity.getCreateAt())
+                .createDate(postEntity.getCreateDate())
+                .build();
+    }
+
+    public PostEntity toEntity(){
+        return PostEntity.builder()
+                .id(id)
+                .userId(userId)
+                .content(content)
+                .likeCount(likeCount)
                 .build();
     }
 }
