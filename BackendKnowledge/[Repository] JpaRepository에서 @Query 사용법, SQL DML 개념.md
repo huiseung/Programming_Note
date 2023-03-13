@@ -30,3 +30,6 @@ ON p.userId = u.id
 ```
 
 
+
+
+-     @Query("SELECT new com.example.demo.CartInfo(c.id, p.name, v.name, p.price, c.quantity) FROM Cart c JOIN FETCH c.product p JOIN FETCH p.vendor v")

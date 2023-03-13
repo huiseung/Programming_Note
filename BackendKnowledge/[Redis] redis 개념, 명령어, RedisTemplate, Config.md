@@ -2,8 +2,10 @@
 - redis-cli
 - AUTH [password]
 
-# Redis Server 
+# Redis 특징
 - 싱글 스레드
+- key-value HashTable 형태로 데이터를 관리하는 데이터베이스
+- 다양한 자료구조에 value를 지원한다
 
 
 # 자료구조
@@ -39,3 +41,6 @@
 
 
 ## HashTable
+- key: {(hashKey: value), (hashKey: value), ...} 형태로 값을 저장합니다
+- String에 비해 사용하는 메모리를 아낄 수 있습니다
+- 2^32-1 개에 hashKey를 담을 수 있습니다
