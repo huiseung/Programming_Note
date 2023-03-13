@@ -4,7 +4,7 @@ services:
     image: ngrinder/controller
     container_name: ngrinder-traffic-bank
     ports:
-      - "1080:80"
+      - "1080:80" # 웹페이지, Id: admin, password: admin
       - "16001:16001"
       - "12000-12009:12000-12009"
   ngrinder-agent:
